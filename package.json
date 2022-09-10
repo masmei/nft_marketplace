@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "cd back-end && npm i && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masmei/nft_marketplace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/masmei/nft_marketplace/issues"
+  },
+  "homepage": "https://github.com/masmei/nft_marketplace#readme"
 }
