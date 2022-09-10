@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Button, Container } from "react-bootstrap";
 import logo from "../assets/pursuitlogo.png";
-import { getAccountPath } from "ethers/lib/utils";
+// import { getAccountPath } from "ethers/lib/utils";
 
 function Navigation({ web3Handler, account }) {
   // console.log(account)

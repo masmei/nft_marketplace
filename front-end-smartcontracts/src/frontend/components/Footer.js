@@ -53,6 +53,7 @@ function Footer({ account }) {
             style={{ color: "white" }}
             href= "https://github.com/masmei"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -61,6 +62,7 @@ function Footer({ account }) {
             style={{ color: "white" }}
             href= "https://twitter.com/Dapp_Boy"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
@@ -69,6 +71,7 @@ function Footer({ account }) {
             style={{ color: "white" }}
             href= "https://www.instagram.com/masmei/"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
@@ -76,6 +79,7 @@ function Footer({ account }) {
             style={{ color: "white" }}
             href= "https://www.linkedin.com/in/masonmei/"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>

@@ -12,7 +12,6 @@ import NFTAbi from "./frontend/contractsData/NFT.json";
 import NFTAddress from "./frontend/contractsData/NFT-address.json";
 import { useState } from "react";
 import { ethers } from "ethers";
-import { Spinner } from "react-bootstrap";
 import "./App.css";
 import Home from "./frontend/components/Home";
 import Footer from "./frontend/components/Footer";

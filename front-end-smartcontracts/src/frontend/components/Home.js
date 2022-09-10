@@ -82,7 +82,7 @@ function Home({ setLoading }) {
             <Carousel.Item interval={3000}>
               <img className="d-block" src={nftImage} alt="First slide" style={{ objectFit: "cover", height: "400px", width: "100%" }}/>
               <Carousel.Caption>
-              <a href="https://ethereum.org/en/nft/" target="_blank">
+              <a href="https://ethereum.org/en/nft/" target="_blank" rel="noreferrer">
                 <Button variant="dark" size="lg">Learn More</Button>
                 </a>  
                 <h2 style={{color:"black"}}>
@@ -98,7 +98,7 @@ function Home({ setLoading }) {
                 style={{ objectFit: "cover", height: "400px", width: "100%"}}
               />
               <Carousel.Caption>
-                <a href="https://opensea.io/blog/learn/how-to-easily-setup-a-metamask-wallet/" target="_blank">
+                <a href="https://opensea.io/blog/learn/how-to-easily-setup-a-metamask-wallet/" target="_blank" rel="noreferrer">
               <Button variant="dark" size="lg">Learn More</Button>
                 </a>  
                 <h2 style={{color:"#ffcc5f"}}>Setting up your MetaMask wallet.</h2>
@@ -107,7 +107,7 @@ function Home({ setLoading }) {
             <Carousel.Item interval={3000}>
               <img className="d-block" src={ethImage} alt="Third slide" style={{ objectFit: "cover", height: "400px", width: "100%" }}/>
               <Carousel.Caption>
-              <a href= "https://opensea.io/blog/learn/how-to-fund-metamask-with-eth/" target="_blank">
+              <a href= "https://opensea.io/blog/learn/how-to-fund-metamask-with-eth/" target="_blank" rel="noreferrer">
               <Button variant="dark" size="lg">Learn More</Button>
               </a>  
                 <h2 style={{color:"black"}}>
