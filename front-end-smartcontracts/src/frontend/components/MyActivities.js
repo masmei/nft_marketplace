@@ -80,7 +80,7 @@ export default function MyActivities({ marketplace, nft, account }) {
   useEffect(() => {
     loadPurchasedItems();
     loadSoldItems();
-  }, [loading]);
+  }, [loading, loadPurchasedItems, loadSoldItems]);
   if (loading) return (
     <div
     style={{

@@ -20,7 +20,7 @@ function MyProfile({ marketplace, nft, account, loading }) {
     axios.get(`${API}/profiles/${account}`).then((response) => {
       setProfile(response.data);
     });
-  }, [loading]);
+  }, [loading, API, account]);
 
   const deleteProfile = () => {
     axios

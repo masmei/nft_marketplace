@@ -41,7 +41,7 @@ export default function MyListedItems({ marketplace, nft, account }) {
   }
   useEffect(() => {
     loadListedItems()
-  }, [loading])
+  }, [loading, loadListedItems])
 
   return (
     <div className="flex justify-center">

@@ -40,7 +40,7 @@ const Market = ({ marketplace, nft, loading}) => {
 
   useEffect(() => {
     loadMarketplaceItems()
-  }, [loading])
+  }, [loading, loadMarketplaceItems])
   if (loading) return (
     <div
     style={{
