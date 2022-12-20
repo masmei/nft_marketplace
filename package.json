@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/masmei/nft_marketplace/issues"
   },
-  "homepage": "https://github.com/masmei/nft_marketplace#readme"
+  "homepage": "https://github.com/masmei/nft_marketplace#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.0"
+  }
 }
