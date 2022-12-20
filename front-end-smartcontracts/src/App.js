@@ -15,6 +15,7 @@ import { ethers } from "ethers";
 import "./App.css";
 import Home from "./frontend/components/Home";
 import Footer from "./frontend/components/Footer";
+import FourOFour from "./frontend/components/FourOFour";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -58,54 +59,57 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      
-          <Navbar web3Handler={web3Handler} account={account} />
-  
+        <Navbar web3Handler={web3Handler} account={account} />
+
         <div>
-          
-            <Routes>
-              <Route
-                path="/"
-                element={<Home />}
-              />
-              <Route
-                path="/market"
-                element={<Market marketplace={marketplace} nft={nft} loading={loading}/>}
-              />
-              <Route
-                path="/create"
-                element={<Create marketplace={marketplace} nft={nft} loading={loading}/>}
-              />
-              <Route path="/profiles/new" element={<NewProfileForm account={account} loading={loading}/>} />
-              <Route
-                path="/profiles/:address"
-                element={
-                  <MyProfile
-                    marketplace={marketplace}
-                    nft={nft}
-                    account={account}
-                    loading={loading}
-                  />
-                }
-              />
-              <Route
-                path="/profiles/:address/edit"
-                element={<ProfileEditForm account={account} loading={loading}/>}
-              />
-              <Route
-                path="/activities"
-                element={
-                  <MyActivities
-                    marketplace={marketplace}
-                    nft={nft}
-                    account={account}
-                    loading={loading}
-                  />
-                }
-              />
-            </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="/market"
+              element={
+                <Market marketplace={marketplace} nft={nft} loading={loading} />
+              }
+            />
+            <Route
+              path="/create"
+              element={
+                <Create marketplace={marketplace} nft={nft} loading={loading} />
+              }
+            />
+            <Route
+              path="/profiles/new"
+              element={<NewProfileForm account={account} loading={loading} />}
+            />
+            <Route
+              path="/profiles/:address"
+              element={
+                <MyProfile
+                  marketplace={marketplace}
+                  nft={nft}
+                  account={account}
+                  loading={loading}
+                />
+              }
+            />
+            <Route
+              path="/profiles/:address/edit"
+              element={<ProfileEditForm account={account} loading={loading} />}
+            />
+            <Route
+              path="/activities"
+              element={
+                <MyActivities
+                  marketplace={marketplace}
+                  nft={nft}
+                  account={account}
+                  loading={loading}
+                />
+              }
+            />
+            <Route path="*" element={<FourOFour />} />
+          </Routes>
         </div>
-        <Footer account={account}/>
+        <Footer account={account} />
       </div>
     </BrowserRouter>
   );
