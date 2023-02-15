@@ -60,7 +60,6 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar web3Handler={web3Handler} account={account} />
-
         <div>
           <Routes>
             <Route path="/" element={<Home />} />

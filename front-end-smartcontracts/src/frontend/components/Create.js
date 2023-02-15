@@ -27,6 +27,7 @@ const Create = ({ marketplace, nft }) => {
   const [description, setDescription] = useState('')
   let navigate = useNavigate();
 
+  // console.log(nft)
   const uploadToIPFS = async (event) => {
     event.preventDefault()
     const file = event.target.files[0]
@@ -41,7 +42,9 @@ const Create = ({ marketplace, nft }) => {
     }
   }
   const createNFT = async () => {
-    if (!image || !price || !name || !description) return
+    if (!image || !price || !name || !description){
+      alert("Please fill in all the fields.")
+      return}
     try{
       const result = await client.add(JSON.stringify({image, price, name, description}))
       mintThenList(result)
@@ -50,16 +53,18 @@ const Create = ({ marketplace, nft }) => {
     }
   }
   const mintThenList = async (result) => {
+    console.log(nft)
     const uri = `https://pursuitnft.infura-ipfs.io/ipfs/${result.path}`
     // mint nft 
-    await(await nft.mint(uri)).wait()
+    
+    await (await nft.mint(uri)).wait()
     // get tokenId of new nft 
     const id = await nft.tokenCount()
     // approve marketplace to spend nft
-    await(await nft.setApprovalForAll(marketplace.address, true)).wait()
+    await (await nft.setApprovalForAll(marketplace.address, true)).wait()
     // add nft to marketplace
     const listingPrice = ethers.utils.parseEther(price.toString())
-    await(await marketplace.makeItem(nft.address, id, listingPrice)).wait()
+    await (await marketplace.makeItem(nft.address, id, listingPrice)).wait()
     navigate(`/market`)
   }
   return (
