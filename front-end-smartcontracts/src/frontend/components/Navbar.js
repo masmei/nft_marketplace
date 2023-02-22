@@ -18,14 +18,14 @@ function Navigation({ web3Handler, account }) {
             <Nav.Link as={Link} to="/market">
               Marketplace
             </Nav.Link>
+            <Nav.Link as={Link} to="/artgenerator">
+              Art Generater
+            </Nav.Link>
             <Nav.Link as={Link} to="/create">
               Create NFT
             </Nav.Link>
             <Nav.Link as={Link} to={`/profiles/${account}`}>
-              My Profile
-            </Nav.Link>
-            <Nav.Link as={Link} to="/activities">
-              Activities&nbsp;
+              My Profile&nbsp;
             </Nav.Link>
           </Nav>
           <Nav>
