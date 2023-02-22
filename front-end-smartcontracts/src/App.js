@@ -16,6 +16,7 @@ import "./App.css";
 import Home from "./frontend/components/Home";
 import Footer from "./frontend/components/Footer";
 import FourOFour from "./frontend/components/FourOFour";
+import ArtGenerator from "./frontend/components/ArtGenerator";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -105,6 +106,7 @@ function App() {
                 />
               }
             />
+            <Route path="artgenerator" element={<ArtGenerator />}/>
             <Route path="*" element={<FourOFour />} />
           </Routes>
         </div>
