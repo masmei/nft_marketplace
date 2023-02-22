@@ -48,6 +48,7 @@ function ArtGenerator() {
             className="mb-2"
             size="md"
             type="text"
+            placeholder="Enter prompt here"
             required
             id="userPrompt"
             value={userPrompt}
