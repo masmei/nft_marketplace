@@ -19,5 +19,8 @@
   "homepage": "https://github.com/masmei/nft_marketplace#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.1.0"
+  },
+  "dependencies": {
+    "openai": "^3.1.0"
   }
 }
