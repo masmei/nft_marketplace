@@ -14,7 +14,7 @@ function User({ user }) {
         <Card.Img className="py-3" variant="top" src={user.picture} style={{ width: "250px" ,borderRadius: "50%"}} />
         <Card.Body>
           <Card.Title>{user.name}</Card.Title>
-          <Card.Text>{user.about}</Card.Text>
+          <Card.Text style={{height:"100px", overflow:"hidden"}}>{user.about}</Card.Text>
         </Card.Body>
         <Card.Footer>
           <Card.Link

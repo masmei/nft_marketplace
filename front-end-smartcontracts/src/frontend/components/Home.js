@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Row, Carousel, Button } from "react-bootstrap";
-import User from "./User";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAddressCard,
@@ -16,16 +15,6 @@ import nftBanner from "../assets/nftBanner1.jpeg";
 const API = process.env.REACT_APP_API_URL;
 
 function Home({ setLoading }) {
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(`${API}/profiles`)
-      .then((response) => {
-        setUsers(response.data);
-      })
-      .catch((c) => console.warn("catch", c));
-  }, []);
 
   return (
     <div>
@@ -117,14 +106,6 @@ function Home({ setLoading }) {
             </Carousel.Item>
           </Carousel>
         </div>
-      </div>
-      <div className="px-5 container">
-        <h3>Meet Our Community Members</h3>
-        <Row xs={1} md={2} lg={3} className="g-5 py-5">
-          {users.map((user) => {
-            return <User key={user.id} user={user} />;
-          })}
-        </Row>
       </div>
     </div>
   );

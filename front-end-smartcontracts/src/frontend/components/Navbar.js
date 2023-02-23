@@ -15,14 +15,17 @@ function Navigation({ web3Handler, account }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/market">
-              Marketplace
-            </Nav.Link>
             <Nav.Link as={Link} to="/artgenerator">
-              Art Generater
+              Art Generator
+            </Nav.Link>
+            <Nav.Link as={Link} to="/community">
+              Community
             </Nav.Link>
             <Nav.Link as={Link} to="/create">
               Create NFT
+            </Nav.Link>
+            <Nav.Link as={Link} to="/market">
+              Marketplace
             </Nav.Link>
             <Nav.Link as={Link} to={`/profiles/${account}`}>
               My Profile&nbsp;

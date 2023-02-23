@@ -17,6 +17,7 @@ import Home from "./frontend/components/Home";
 import Footer from "./frontend/components/Footer";
 import FourOFour from "./frontend/components/FourOFour";
 import ArtGenerator from "./frontend/components/ArtGenerator";
+import Community from "./frontend/components/Community"
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -69,6 +70,10 @@ function App() {
               element={
                 <Market marketplace={marketplace} nft={nft} loading={loading} />
               }
+            />
+            <Route
+              path="/community"
+              element={<Community />}
             />
             <Route
               path="/create"
