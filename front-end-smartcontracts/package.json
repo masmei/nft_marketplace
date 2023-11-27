@@ -19,7 +19,7 @@
     "buffer": "^6.0.3",
     "chai": "^4.3.6",
     "dotenv": "^16.0.2",
-    "ethereum-waffle": "^3.4.0",
+    "ethereum-waffle": "^4.0.1",
     "ethers": "^5.5.4",
     "ipfs-http-client": "^56.0.1",
     "openai": "^3.1.0",
