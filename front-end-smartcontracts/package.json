@@ -21,7 +21,7 @@
     "dotenv": "^16.0.2",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.4",
-    "ipfs-http-client": "^56.0.1",
+    "ipfs-http-client": "^60.0.1",
     "openai": "^3.1.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",
